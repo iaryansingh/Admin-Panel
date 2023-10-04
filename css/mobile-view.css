@@ -1,0 +1,201 @@
+/* Responsive Media Query */
+@media (max-width: 1240px) {
+    .sidebar{
+        width: 60px;
+    }
+    .sidebar.active{
+        width: 220px;
+    }
+    .home-section{
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+    .sidebar.active ~ .home-section{
+        /* width: calc(100% - 220px); */
+        overflow: hidden;
+        left: 220px;
+    }
+    .home-section nav{
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+    .sidebar.active ~ .home-section nav{
+        width: calc(100% - 220px);
+        left: 220px;
+    }
+}
+@media (max-width: 800px){
+    .date-btn{
+
+    }
+    .date_filter{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1150px) {
+    .home-content .image-boxes{
+        flex-direction: column;
+    }
+    .home-content .image-boxes .box{
+        width: 90%;
+        overflow-x: scroll;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 1000px) {
+        .overview-boxes .box{
+            width: calc(100% / 2 - 15px);
+            margin-bottom: 15px;
+        }
+
+        /*JSON DATA*/
+        .table-data{
+            width:  600px;
+            margin: 10px auto;
+        }
+
+        .home-content .data-boxes .recent-data{
+            margin: 10px;
+        }
+    }
+    @media (max-width: 700px) {
+        nav .sidebar-button .dashboard,
+        nav .profile-details .admin_name,
+        nav .profile-details i{
+            display: none;
+        }
+        .home-section nav .profile-details{
+            height: 40px;
+            min-width: 40px;
+            border-radius: 100px;
+        }
+        .modal {
+            display: flex;
+            position: absolute;
+            overflow: hidden;
+            width: 500px;
+            margin-top: 60px;
+            transition: 3s ease-in-out;
+        }
+
+        .page-counts{
+            font-size: 10px;
+        }
+
+        .index_buttons button{
+            font-size: 10px;
+        }
+    }
+    @media (max-width: 550px) {
+        .overview-boxes .box{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        /*img.modal-image {*/
+        /*    display: flex;*/
+        /*    align-items: center;*/
+        /*    justify-content: center;*/
+        /*    width: 500px;*/
+        /*    height: auto;*/
+        /*    margin: auto;*/
+        /*}*/
+
+        img.modal-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            max-height: 300px;
+            margin: auto;
+        }
+        .cross{
+            position: relative;
+            bottom: 255px;
+            left: 340px;
+            /*right: 250px;*/
+            cursor: pointer;
+            font-size: 40px;
+            /*background-color: rgba(0,0,0,.5);*/
+            display: flex;
+            text-align: right;
+            color: black;
+            background: white;
+            margin: auto;
+        }
+        .index_buttons button{
+            font-size: 8px;
+            padding: 5px 10px;
+        }
+
+
+        /*!*JSON DATA*!*/
+        /*.table-data{*/
+        /*    width:  300px;*/
+        /*    margin: 10px auto;*/
+        /*}*/
+
+        /*.home-content .data-boxes .recent-data{*/
+        /*    margin: 10px;*/
+        /*}*/
+
+        /*.page_limit{*/
+        /*    font-size: 15px;*/
+        /*    background: lightskyblue;*/
+        /*    width: 250px;*/
+        /*    border-radius: 5px;*/
+        /*}*/
+
+        .table{
+            width: 90%;
+            height: 90%;
+            padding: 0px 0px;
+        }
+    }
+    @media (max-width: 385px) {
+        .sidebar{
+            width: 0;
+        }
+
+        .admin-tag{
+            display: none;
+        }
+        .sidebar.active{
+            width: 60px;
+        }
+        .home-section{
+            width: 100%;
+            left: 0;
+        }
+        .sidebar.active ~ .home-section{
+            left: 60px;
+            width: calc(100% - 60px);
+        }
+        .home-section nav{
+            width: 100%;
+            left: 0;
+        }
+        .sidebar.active ~ .home-section nav{
+            left: 60px;
+            width: calc(100% - 60px);
+        }
+
+        .cross{
+            position: relative;
+            bottom: 235px;
+            left: 310px;
+            /*right: 250px;*/
+            cursor: pointer;
+            font-size: 40px;
+            /*background-color: rgba(0,0,0,.5);*/
+            display: flex;
+            text-align: right;
+            color: #fff;
+            margin: auto;
+        }
+
+    }
+}
+
